@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+
+
+      <span class="position-fixed bottom-0 end-0 m-3 z-3">
+        <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+     </span>
+<div class="main-image">
+         <img src="./image/wraper.png">   
+</div>
+
+     <nav class="navbar navbar-expand-lg nav-bg border-bottom border-dark">
+        <div class="container">
+           <h5 class="navbar-brand mb-0 text-uppercase">
+              <img src="./image/logo-sm.png" alt="logo photo" style="max-width: 40px" /> GameOver
+           </h5>
+           <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+           >
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  mb-2 mb-lg-0 menu">
+                 <li class="nav-item">
+                    <a role="button" class="nav-link active text-uppercase" aria-current="page" data-category="mmorpg">mmorpg</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                 </li>
+              </ul>
+            
+                    <span role="button" class="logout-btn"></span>
+             
+           </div>
+        </div>
+     </nav>
+
+     <main class="container my-3 home">
+        <section class="position-relative">
+           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+
+           <div class="loading d-none">
+              <span class="loader"></span>
+           </div>
+        </section>
+     </main>
+
+
+     
+<script src="./Js/bootstrap.bundle.min.js"></script>    
+<script src="./Js/home.js"></script>
+
+</body>
+</html>
